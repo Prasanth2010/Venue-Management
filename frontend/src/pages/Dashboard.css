@@ -1,0 +1,36 @@
+
+  .dashboard{
+    top: 100px;
+    left: 0;
+    width: 93%;
+    height: calc(100vh - 90px);
+    background: url("../assert/bit_3.jpg") no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    padding: 50px;
+  }
+  .content{
+    padding-left: 500px;
+    font-size: 25px;
+    background-color: transparent;
+    box-shadow: 0px 0px 30px rgba(227,228,237,0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+  }
+  .welcome{
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    box-shadow: 0px 0px 30px rgba(227,228,237,0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+  }
+  .happy{
+    color: rgb(0, 0, 0);
+  }
+  .b{
+    background-color: transparent;
+  }
+  .dashboard-container{
+    background-color: transparent;
+    box-shadow: 0px 0px 30px rgba(227,228,237,0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+  }

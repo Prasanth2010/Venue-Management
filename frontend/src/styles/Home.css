@@ -1,0 +1,80 @@
+/* style/Home.css */
+*{
+  background-color: white;
+}
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Aligns items to the top */
+  padding: 2rem;
+  background: #f5f9fc;
+  height: 100vh; /* Ensures container takes up full viewport height */
+  box-sizing: border-box;
+  background-image: url("../assert/bg6.jpg");
+}
+
+.home-title {
+    font-size: 2.5rem;
+    color: #1e272e;
+    margin-bottom: 1rem;
+}
+
+.home-welcome {
+    font-size: 1.2rem;
+    color: #535c68;
+}
+
+.nav-button {
+    margin: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: #1e272e;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.nav-button:hover {
+    background: #3a3a3a;
+}
+.happy{
+  background-color: transparent;
+  color:rgb(0, 0, 0);
+  margin-left: -100px;
+  padding-left: 180px;
+}
+.welcome {
+  font-size: 40px;
+  color:rgb(0, 0, 0);
+  background-color: transparent ;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  overflow: hidden; 
+  white-space: nowrap;
+  margin-left: -150px; 
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+.nav{
+  background-color: transparent;
+}
+.cont{
+  background-color: transparent ;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+.pnt{
+  background-color: transparent;
+}

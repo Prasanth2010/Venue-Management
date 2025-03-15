@@ -1,0 +1,141 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.booking-history-container {
+  padding: 2rem;
+  background-color: #dac475;
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+  min-height: 100vh;
+  padding-left: 230px;
+}
+
+
+
+.tit {
+  background-color: #dac475;
+  color: #333;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.error {
+  color: #ff0000;
+  font-weight: bold;
+  background-color: #ffe6e6;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 20px auto;
+}
+
+.booking-table {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto; 
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.booking-table thead {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.booking-table th,
+.booking-table td {
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.booking-table th {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.booking-table thead{
+  color: #333;
+}
+.booking-table tbody tr {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.booking-table tbody tr:nth-of-type(even) {
+  background-color: #f8f9fa;
+}
+
+.booking-table tbody tr:last-of-type {
+  border-bottom: 2px solid #007bff;
+}
+
+.booking-table tbody tr:hover {
+  background-color: #e9f5ff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.booking-table th.tbone,
+.booking-table td.tbone {
+  width: 150px; 
+}
+
+@media (max-width: 768px) {
+  .booking-table {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .booking-table th,
+  .booking-table td {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  .booking-table thead {
+    display: none;
+  }
+
+  .booking-table tbody tr {
+    display: block;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #007bff;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .booking-table tbody td {
+    display: block;
+    text-align: right;
+    padding: 10px 15px;
+    position: relative;
+  }
+
+  .booking-table tbody td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 600;
+    color: #007bff;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+}
