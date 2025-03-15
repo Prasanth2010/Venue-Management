@@ -94,7 +94,6 @@ app.get("/api/checkAvailability", async (req, res) => {
       return res.status(400).json({ error: "❌ All parameters are required!" });
     }
 
-    // ✅ Ensure date is in correct format (YYYY-MM-DD)
     const formattedDate = date.split("-").join("-");
 
     // ✅ List of all venues
@@ -108,15 +107,13 @@ app.get("/api/checkAvailability", async (req, res) => {
       "CSBS Lab 1", "CSBS Lab 2", "ISE Lab 1", "ISE Lab 2"
     ];
 
-    // ✅ Find booked venues on this date and time range
     const bookedVenues = await Venue.find({
       fromDate: formattedDate,
-      $or: [{ fromTime: { $lte: toTime }, toTime: { $gte: fromTime } }], // Fixed time conflict logic
+      $or: [{ fromTime: { $lte: toTime }, toTime: { $gte: fromTime } }], 
     }).select("venue");
 
     const bookedVenueNames = bookedVenues.map((booking) => booking.venue);
 
-    // ✅ Mark venues as available or booked
     const venueStatus = allVenues.map((venue) => ({
       name: venue,
       status: bookedVenueNames.includes(venue) ? "booked" : "available",
